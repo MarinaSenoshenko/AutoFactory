@@ -16,9 +16,9 @@ dependencies {
     implementation 'javax.annotation:javax.annotation-api'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
-    implementation("org.slf4j:slf4j-api:1.7.36") // Или нужная вам версия
-    implementation("ch.qos.logback:logback-classic:1.2.11") // Или нужная вам версия
-    implementation("org.projectlombok:lombok:1.18.24") // Или нужная вам версия
+    implementation("org.slf4j:slf4j-api:1.7.36")
+    implementation('ch.qos.logback:logback-classic')
+    implementation("org.projectlombok:lombok:1.18.24")
 }
 
 tasks.named('test') {
