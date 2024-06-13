@@ -1,0 +1,26 @@
+plugins {
+    id 'org.springframework.boot' version '2.7.5'
+    id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+    id 'java'
+}
+
+group = 'ru.nsu.ссfit'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'javax.annotation:javax.annotation-api'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    implementation("org.slf4j:slf4j-api:1.7.36") // Или нужная вам версия
+    implementation("ch.qos.logback:logback-classic:1.2.11") // Или нужная вам версия
+    implementation("org.projectlombok:lombok:1.18.24") // Или нужная вам версия
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
